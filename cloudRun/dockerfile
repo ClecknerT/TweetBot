@@ -1,0 +1,19 @@
+# Use the official Python image
+FROM python:3.8-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy the Python script and requirements.txt
+COPY script.py /app/
+COPY requirements.txt /app/
+COPY carrington-9-0d7370a4c5a9.json /app/
+
+# Install the required packages
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose the port that the Flask app will listen on
+EXPOSE 8080
+
+# Run the Flask app when the container starts
+CMD ["python", "script.py"]

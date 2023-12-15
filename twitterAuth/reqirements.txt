@@ -1,0 +1,6 @@
+firebase-admin
+requests
+tweepy
+google-cloud-pubsub
+wget
+google.cloud

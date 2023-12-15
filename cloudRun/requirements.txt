@@ -1,0 +1,5 @@
+firebase-admin
+flask
+requests
+requests_oauthlib
+google-cloud-logging
